@@ -1,0 +1,62 @@
+# Business rules for the Linda Ordering Dashboard.
+#
+# These constants replace the "magic numbers" that would otherwise get
+# buried in code, per the build instructions. Every rule here traces back to
+# either the source SAP schemas (data/aggregate.py + data/schemas.py) or an
+# explicit, documented policy decision -- never an invented value.
+
+timezone: "America/Toronto"
+
+plants:
+  "2910": Mississauga
+  "2920": Calgary
+  "2930": Surrey
+
+# The reference workbook's current summary behavior differs by plant for
+# open-order allocation (preserved verbatim from the build instructions).
+# "Open PO Qty" is always shown too, so this business rule stays auditable
+# rather than hidden inside a single blended number.
+allocation_qty_field_by_plant:
+  "2910": "PO Quantity"
+  "2920": "PO Request Quantity"
+  "2930": "PO Request Quantity"
+
+# Target Stock: no Target Stock / Safety Stock / Reorder Point column exists
+# anywhere in the 9 supplied SAP exports, and none of the 16 named supplier
+# sheets in the reference workbook contain a clean (non-#REF!) target-stock
+# field either -- confirmed during extraction (see
+# config/product_master_extraction_audit.json). The closest valid,
+# non-broken figure in the reference workbook is each material's most
+# recently populated "Forecast AS400" column, which is extracted into
+# config/product_master.csv as Latest_Forecast_Qty. That value is used as
+# Target Stock. When a Plant+Material has no matching product-master row, or
+# the row has no Latest_Forecast_Qty, Target Stock is blank and the item is
+# flagged "Needs planner target" per the build instructions -- never
+# defaulted to zero or invented.
+target_stock:
+  source: "config/product_master.csv"
+  source_field: "Latest_Forecast_Qty"
+  join_key: ["Plant", "Material"]
+
+# Safety stock: also absent from every source file. Modeled as a configured
+# percentage of Target Stock so the threshold is visible and adjustable in
+# one place instead of scattered through the code.
+safety_stock:
+  method: "percent_of_target_stock"
+  percent_of_target_stock: 0.20
+
+suggested_order_qty:
+  # max(Target Stock - Available - Incoming + Unconfirmed Demand + Manual Override, 0)
+  round_up_to_whole_case: true
+
+risk_status:
+  # Critical: projected balance below 0
+  # At Risk: projected balance is nonnegative but below the configured safety stock
+  # Review: missing target, unmatched material, or invalid source data
+  # Covered: projected balance meets or exceeds safety stock
+  order: ["Review", "Critical", "At Risk", "Covered"]
+
+data_quality:
+  # All reconciliation variances must be zero before Export Center enables
+  # the export button (per build instructions).
+  block_export_on_variance: true

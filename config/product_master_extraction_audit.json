@@ -1,0 +1,245 @@
+{
+  "Alimentias": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 22,
+    "rows_extracted": 60,
+    "rows_skipped_blank": 165,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "2024 Forecast": 60
+    }
+  },
+  "Cheeseland": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 5,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 17,
+    "rows_extracted": 82,
+    "rows_skipped_blank": 20,
+    "rows_skipped_missing_material": 1,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 63
+    }
+  },
+  "Vergeer": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 17,
+    "rows_extracted": 12,
+    "rows_skipped_blank": 31,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 12
+    }
+  },
+  "Woerle": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 22,
+    "rows_extracted": 4,
+    "rows_skipped_blank": 285,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 3
+    }
+  },
+  "Freisland": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 18,
+    "rows_extracted": 41,
+    "rows_skipped_blank": 107,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 40
+    }
+  },
+  "Caputo": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": null,
+    "tol_col": 2,
+    "desc_col": 3,
+    "reconstructed_material_from_tol": true,
+    "forecast_col_count": 14,
+    "rows_extracted": 0,
+    "rows_skipped_blank": 1341,
+    "rows_skipped_missing_material": 39,
+    "forecast_source_column_distribution": {}
+  },
+  "Bothwell": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 6,
+    "rows_extracted": 69,
+    "rows_skipped_blank": 1305,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 67
+    }
+  },
+  "Cows": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": null,
+    "tol_col": 2,
+    "desc_col": 3,
+    "reconstructed_material_from_tol": true,
+    "forecast_col_count": 15,
+    "rows_extracted": 39,
+    "rows_skipped_blank": 9,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 39
+    }
+  },
+  "Anne of GG": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 17,
+    "rows_extracted": 3,
+    "rows_skipped_blank": 64,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 3
+    }
+  },
+  "AppleKiss": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 6,
+    "rows_extracted": 9,
+    "rows_skipped_blank": 594,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 9
+    }
+  },
+  "Sabana": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 16,
+    "rows_extracted": 19,
+    "rows_skipped_blank": 428,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "forecast": 4,
+      "Forecast AS400": 13
+    }
+  },
+  "Stonetown": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 15,
+    "rows_extracted": 31,
+    "rows_skipped_blank": 5,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 30
+    }
+  },
+  "La Tortilla": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 5,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 15,
+    "rows_extracted": 20,
+    "rows_skipped_blank": 53,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 20
+    }
+  },
+  "Traditional": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 7,
+    "rows_extracted": 60,
+    "rows_skipped_blank": 7,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 45
+    }
+  },
+  "Gay Lea": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 6,
+    "rows_extracted": 3,
+    "rows_skipped_blank": 46,
+    "rows_skipped_missing_material": 2,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 2
+    }
+  },
+  "Old Croc": {
+    "header_row": 3,
+    "plant_col": 1,
+    "sap_col": 2,
+    "tol_col": 3,
+    "desc_col": 4,
+    "reconstructed_material_from_tol": false,
+    "forecast_col_count": 6,
+    "rows_extracted": 21,
+    "rows_skipped_blank": 7,
+    "rows_skipped_missing_material": 0,
+    "forecast_source_column_distribution": {
+      "Forecast AS400": 15
+    }
+  },
+  "_known_limitations": {
+    "Caputo": "Caputo (0 rows extracted) uses a block/label layout, not the uniform one-row-per-material table used by the other 15 supplier sheets: the TOL #/Product columns are blank for essentially every data row, and the real product identity (e.g. \"71000071 Wiscon Corporation K20\") appears as a scattered label row above each block instead. No merged cells tie the label to its block (verified via openpyxl merged_cells), so there is no safe, non-invented way to propagate it down to the per-row per-plant forecast entries. Materials sourced only from Caputo therefore have Target Stock = blank (\"Needs planner target\") until a planner manually maps this sheet. Cows uses the same front columns (Plant #, TOL #, Product) as the uniform sheets and DID extract 39 rows successfully, so it is not affected by this limitation.",
+    "Cheeseland_and_La_Tortilla": "15 rows originally extracted from these two sheets had a populated TOL #/Product but a blank Plant # -- bleed from a secondary legend/notes block elsewhere in the sheet with a different column layout, not real per-plant product rows. They are skipped entirely (counted in rows_skipped_blank above) rather than kept with a blank/invented Plant, since (Plant, Material) is a required composite key everywhere downstream."
+  }
+}

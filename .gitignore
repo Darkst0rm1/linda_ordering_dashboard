@@ -1,0 +1,18 @@
+# Never commit uploaded workbooks or user data
+sample_data/
+deliverables/
+screenshots/
+*.xlsx
+!tests/fixtures/**/*.xlsx
+
+.env
+.streamlit/secrets.toml
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+.DS_Store
+Thumbs.db

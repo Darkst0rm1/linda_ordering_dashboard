@@ -1,0 +1,105 @@
+{
+  "reference_workbook": "Linda New Ordering Spreadsheet 08_19_2026.xlsx",
+  "total_sheets": 49,
+  "total_formulas": 38810,
+  "total_ref_error_formulas": 1952,
+  "supplier_sheets": {
+    "Alimentias": {
+      "formula_count": 4102,
+      "ref_error_count": 853,
+      "rows": 228,
+      "cols": 315
+    },
+    "Cheeseland": {
+      "formula_count": 3658,
+      "ref_error_count": 290,
+      "rows": 106,
+      "cols": 127
+    },
+    "Vergeer": {
+      "formula_count": 590,
+      "ref_error_count": 36,
+      "rows": 46,
+      "cols": 248
+    },
+    "Woerle": {
+      "formula_count": 143,
+      "ref_error_count": 11,
+      "rows": 292,
+      "cols": 140
+    },
+    "Freisland": {
+      "formula_count": 1692,
+      "ref_error_count": 24,
+      "rows": 151,
+      "cols": 126
+    },
+    "Caputo": {
+      "formula_count": 1498,
+      "ref_error_count": 78,
+      "rows": 1383,
+      "cols": 451
+    },
+    "Bothwell": {
+      "formula_count": 2512,
+      "ref_error_count": 138,
+      "rows": 1377,
+      "cols": 171
+    },
+    "Cows": {
+      "formula_count": 1631,
+      "ref_error_count": 80,
+      "rows": 51,
+      "cols": 458
+    },
+    "Anne of GG": {
+      "formula_count": 119,
+      "ref_error_count": 6,
+      "rows": 70,
+      "cols": 130
+    },
+    "AppleKiss": {
+      "formula_count": 167,
+      "ref_error_count": 18,
+      "rows": 606,
+      "cols": 58
+    },
+    "Sabana": {
+      "formula_count": 347,
+      "ref_error_count": 9,
+      "rows": 450,
+      "cols": 168
+    },
+    "Stonetown": {
+      "formula_count": 1378,
+      "ref_error_count": 164,
+      "rows": 39,
+      "cols": 132
+    },
+    "La Tortilla": {
+      "formula_count": 715,
+      "ref_error_count": 62,
+      "rows": 76,
+      "cols": 114
+    },
+    "Traditional": {
+      "formula_count": 698,
+      "ref_error_count": 105,
+      "rows": 70,
+      "cols": 53
+    },
+    "Gay Lea": {
+      "formula_count": 67,
+      "ref_error_count": 16,
+      "rows": 54,
+      "cols": 57
+    },
+    "Old Croc": {
+      "formula_count": 276,
+      "ref_error_count": 62,
+      "rows": 31,
+      "cols": 48
+    }
+  },
+  "note": "Full per-cell survey performed against the supplied reference workbook on 2026-08-19 (see scripts/survey_reference_workbook.py). Broken formulas (#REF!) were never translated into dashboard logic -- product-master extraction (scripts/build_product_master.py) only reads static values and non-broken formulas (e.g. the SAP #  = 100&TOL# pattern, and Forecast AS400 columns that pull from valid sheets like '2024' or '2910PreFOR2025'). See product_master_extraction_audit.json for the per-supplier extraction detail and known limitations (Caputo)."
+}

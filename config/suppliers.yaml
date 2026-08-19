@@ -1,0 +1,111 @@
+# Supplier / brand master list for the Linda Ordering Dashboard.
+#
+# Extracted from the 16 named supplier worksheets in
+# "Linda New Ordering Spreadsheet 08_19_2026.xlsx". The reference workbook's
+# own tab colors were sparse and inconsistent across these sheets (most had
+# no tab color at all, and the ones that did mostly shared the same faint
+# theme tint) -- see sample_data/_extract for the raw survey. Rather than
+# reproduce that inconsistency, each supplier here is assigned one color
+# from a restrained, professional, colorblind-considerate palette so the
+# dashboard has a consistent, recognizable identity per supplier.
+#
+# `product_master_source_sheet` is the reference workbook tab this supplier's
+# product/vendor rows were extracted from (see config/product_master.csv and
+# config/product_master_extraction_audit.json for the extraction detail).
+
+suppliers:
+  - key: alimentias
+    display_name: Alimentias
+    color: "#2563EB"
+    product_master_source_sheet: Alimentias
+
+  - key: cheeseland
+    display_name: Cheeseland
+    color: "#D97706"
+    product_master_source_sheet: Cheeseland
+
+  - key: vergeer
+    display_name: Vergeer
+    color: "#059669"
+    product_master_source_sheet: Vergeer
+
+  - key: woerle
+    display_name: Woerle
+    color: "#7C3AED"
+    product_master_source_sheet: Woerle
+
+  - key: freisland
+    display_name: Freisland
+    color: "#DB2777"
+    product_master_source_sheet: Freisland
+
+  - key: caputo
+    display_name: Caputo
+    color: "#DC2626"
+    product_master_source_sheet: Caputo
+
+  - key: bothwell
+    display_name: Bothwell
+    color: "#0891B2"
+    product_master_source_sheet: Bothwell
+
+  - key: cows
+    display_name: Cows
+    color: "#65A30D"
+    product_master_source_sheet: Cows
+
+  - key: anne_of_gg
+    display_name: Anne of GG
+    color: "#9333EA"
+    product_master_source_sheet: Anne of GG
+
+  - key: applekiss
+    display_name: AppleKiss
+    color: "#EA580C"
+    product_master_source_sheet: AppleKiss
+
+  - key: sabana
+    display_name: Sabana
+    color: "#0D9488"
+    product_master_source_sheet: Sabana
+
+  - key: stonetown
+    display_name: Stonetown
+    color: "#4F46E5"
+    product_master_source_sheet: Stonetown
+
+  - key: la_tortilla
+    display_name: La Tortilla
+    color: "#CA8A04"
+    product_master_source_sheet: La Tortilla
+
+  - key: traditional
+    display_name: Traditional
+    color: "#BE123C"
+    product_master_source_sheet: Traditional
+
+  - key: gay_lea
+    display_name: Gay Lea
+    color: "#16A34A"
+    product_master_source_sheet: Gay Lea
+
+  - key: old_croc
+    display_name: Old Croc
+    color: "#475569"
+    product_master_source_sheet: Old Croc
+
+plants:
+  "2910": Mississauga
+  "2920": Calgary
+  "2930": Surrey
+
+plant_colors:
+  "2910": "#2563EB"
+  "2920": "#059669"
+  "2930": "#7C3AED"
+
+status_colors:
+  Critical: "#DC2626"
+  At Risk: "#D97706"
+  Review: "#2563EB"
+  Covered: "#16A34A"
